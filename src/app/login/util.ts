@@ -10,7 +10,7 @@ import { fromB64 } from '@mysten/bcs';
 import { EPH_KEY, EPOCH_KEY, JWT_KEY, NONCE_KEY, RANDOMNESS_KEY } from './page';
 
 
-const CLIENT_ID="810234240412-vn3nbub3ke3g2aec3vh19bmm66040oce.apps.googleusercontent.com";
+const CLIENT_ID=process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!;
 export const REDIRECT_URL = 'http://localhost:3000/login';
 
 export const getSuiBalance=async(account: string):Promise<string>=>{
