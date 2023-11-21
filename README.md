@@ -1,3 +1,7 @@
+## Google Oauth login
+First create oauth login and add that field in .env.local file
+NEXT_PUBLIC_GOOGLE_CLIENT_ID={}
+
 ## Create Environment Values
 create .env.local in main directory
 Add below values for devnet
